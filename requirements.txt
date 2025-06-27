@@ -4,6 +4,4 @@ pandas
 numpy
 matplotlib
 scipy
-pathlib
-collections
 supervisions
