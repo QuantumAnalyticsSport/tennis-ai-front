@@ -7,7 +7,7 @@ def assemble_four_videos(
     video2_path: str = None,
     video3_path: str = None,
     video4_path: str = None,
-    output_path: str = "output.mp4",
+    output_path: str = "output.avi",
     bottom_h: int = 900,
     bottom_w_left: int = 1210,
     fourcc: str = "avc1",
