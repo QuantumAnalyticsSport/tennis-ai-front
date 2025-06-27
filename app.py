@@ -93,7 +93,7 @@ for key, value in defaults.items():
 # ------------------
 # SIDEBAR CONTROLS
 # ------------------
-st.sidebar.image("https://upload.wikimedia.org/wikipedia/commons/3/3e/Tennis_ball_2.png", width=100)
+#st.sidebar.image("https://upload.wikimedia.org/wikipedia/commons/3/3e/Tennis_ball_2.png", width=100)
 st.sidebar.title("🎾 Overlay Options")
 
 st.sidebar.subheader("A. Video Overlays")
@@ -167,7 +167,7 @@ if st.button("🧠 Create Analysis"):
                            name=parameters_dico['name'], debug=False)
         
         annotate_video_with_hits_overlay(
-            video_input_path,
+            video_intermediate_path,
             player_info,
             smoothed_tracks,
             dico_ball,
