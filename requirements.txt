@@ -4,4 +4,4 @@ pandas
 numpy
 matplotlib
 scipy
-supervisions
+supervision
