@@ -1,11 +1,7 @@
-import os
-os.environ['OPENCV_IO_ENABLE_OPENEXR'] = '0'
-
 import streamlit as st
 from pathlib import Path
 from main import dico_bounces, dico_hits, dico_players, dico_trajectories, dico_ball, dico_shots, player_info, smoothed_tracks, frames_data
-#from front_video import create_video_front, annotate_video_with_hits_overlay
-from front_video_v2 import create_video_front, annotate_video_with_hits_overlay
+from front_video import create_video_front, annotate_video_with_hits_overlay
 from graphs import create_analysis_video
 from minimap import generate_minimap_video
 from table import create_cumulative_stats_video
@@ -17,12 +13,12 @@ VIDEO_DIR.mkdir(exist_ok=True)
 
 video_input_path = VIDEO_DIR / "input_video.mp4"
 
-video_output_path = VIDEO_DIR / "front_overlay.avi"
-video_intermediate_path = VIDEO_DIR / "annotated_hits_overlay.avi"
-analysis_output_path = VIDEO_DIR / "my_dynamic_video.avi"
-minimap_output_path = VIDEO_DIR / "minimap_overlay.avi"
-table_output_path = VIDEO_DIR / "cumulative_table.avi"
-final_output_path = VIDEO_DIR / "final_output.avi"
+video_output_path = VIDEO_DIR / "front_overlay.mp4"
+video_intermediate_path = VIDEO_DIR / "annotated_hits_overlay.mp4"
+analysis_output_path = VIDEO_DIR / "my_dynamic_video.mp4"
+minimap_output_path = VIDEO_DIR / "minimap_overlay.mp4"
+table_output_path = VIDEO_DIR / "cumulative_table.mp4"
+final_output_path = VIDEO_DIR / "final_output.mp4"
 
 
 # ------------------
@@ -93,7 +89,7 @@ for key, value in defaults.items():
 # ------------------
 # SIDEBAR CONTROLS
 # ------------------
-#st.sidebar.image("https://upload.wikimedia.org/wikipedia/commons/3/3e/Tennis_ball_2.png", width=100)
+st.sidebar.image("https://upload.wikimedia.org/wikipedia/commons/3/3e/Tennis_ball_2.png", width=100)
 st.sidebar.title("🎾 Overlay Options")
 
 st.sidebar.subheader("A. Video Overlays")
