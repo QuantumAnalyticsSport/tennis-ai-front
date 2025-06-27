@@ -13,12 +13,12 @@ VIDEO_DIR.mkdir(exist_ok=True)
 
 video_input_path = VIDEO_DIR / "input_video.mp4"
 
-video_output_path = VIDEO_DIR / "front_overlay.avi"
-video_intermediate_path = VIDEO_DIR / "annotated_hits_overlay.avi"
-analysis_output_path = VIDEO_DIR / "my_dynamic_video.avi"
-minimap_output_path = VIDEO_DIR / "minimap_overlay.avi"
-table_output_path = VIDEO_DIR / "cumulative_table.avi"
-final_output_path = VIDEO_DIR / "final_output.avi"
+video_output_path = VIDEO_DIR / "front_overlay.mp4"
+video_intermediate_path = VIDEO_DIR / "annotated_hits_overlay.mp4"
+analysis_output_path = VIDEO_DIR / "my_dynamic_video.mp4"
+minimap_output_path = VIDEO_DIR / "minimap_overlay.mp4"
+table_output_path = VIDEO_DIR / "cumulative_table.mp4"
+final_output_path = VIDEO_DIR / "final_output.mp4"
 
 
 # ------------------
