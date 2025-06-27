@@ -154,7 +154,7 @@ def create_cumulative_stats_video(dico_players, dico_shots, player_info,
     h, w, _ = sample_img.shape
 
     # Init writer at real FPS (25)
-    out = cv2.VideoWriter(output_path, cv2.VideoWriter_fourcc(*'mp4v'), fps, (w, h))
+    out = cv2.VideoWriter(output_path, cv2.VideoWriter_fourcc(*'avc1'), fps, (w, h))
 
     last_max_state = {}
     fade_tracker = {}
