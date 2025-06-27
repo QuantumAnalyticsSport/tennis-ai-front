@@ -7,4 +7,4 @@ matplotlib
 scipy
 supervision
 ffmpeg
-libavcodec-extra
+
