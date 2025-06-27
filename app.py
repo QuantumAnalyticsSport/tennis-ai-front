@@ -4,8 +4,8 @@ os.environ['OPENCV_IO_ENABLE_OPENEXR'] = '0'
 import streamlit as st
 from pathlib import Path
 from main import dico_bounces, dico_hits, dico_players, dico_trajectories, dico_ball, dico_shots, player_info, smoothed_tracks, frames_data
-from front_video import create_video_front, annotate_video_with_hits_overlay
-#from front_video_v2 import annotate_video_with_hits_overlay
+#from front_video import create_video_front, annotate_video_with_hits_overlay
+from front_video_v2 import create_video_front, annotate_video_with_hits_overlay
 from graphs import create_analysis_video
 from minimap import generate_minimap_video
 from table import create_cumulative_stats_video
