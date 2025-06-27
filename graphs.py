@@ -101,7 +101,7 @@ def create_analysis_video(dico, player_info, keys_to_plot, output_path="dynamic_
 
     sample_img = draw_dynamic_graph(data, player_info, common_frames[0], keys_to_plot, fps, smooth=smooth)
     h, w, _ = sample_img.shape
-    out = cv2.VideoWriter(output_path, cv2.VideoWriter_fourcc(*'XVID'), fps, (w, h))
+    out = cv2.VideoWriter(output_path, cv2.VideoWriter_fourcc(*'avc1'), fps, (w, h))
 
     for frame_idx in common_frames:
         frame_img = draw_dynamic_graph(data, player_info, frame_idx, keys_to_plot, fps, smooth=smooth)
