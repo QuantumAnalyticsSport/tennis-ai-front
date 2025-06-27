@@ -1,3 +1,6 @@
+import os
+os.environ['OPENCV_IO_ENABLE_OPENEXR'] = '0'
+
 import streamlit as st
 from pathlib import Path
 from main import dico_bounces, dico_hits, dico_players, dico_trajectories, dico_ball, dico_shots, player_info, smoothed_tracks, frames_data
