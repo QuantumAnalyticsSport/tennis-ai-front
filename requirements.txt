@@ -1,7 +1,6 @@
 opencv-python-headless
 pillow
 supervision
-moviepy
 scipy
 streamlit
 moviepy>=1.0.3
