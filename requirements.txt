@@ -5,3 +5,4 @@ pandas
 pillow
 supervision==0.20.0
 moviepy
+
